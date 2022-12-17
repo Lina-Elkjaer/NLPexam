@@ -16,7 +16,7 @@ def main():
     pretrained_lang_model = os.path.join("..", "models", "lid.176.ftz")
     ft_model = fasttext.load_model(pretrained_lang_model)
 
-    file_list = file_list[:50] + file_list[1320:1370]
+    #file_list = file_list[:50] + file_list[1320:1370]
     #file_list = file_list[1320:1322]
 
     make_df(file_list, save = 1, ft_model = ft_model)

@@ -4,6 +4,8 @@ import csv
 from data import *
 import pickle
 import fasttext
+import matplotlib.pyplot as plt
+from summary import *
 
 # running this script took 7.65 hrs on all comments (9225973 rows) on 64 CPUs
 
@@ -20,6 +22,12 @@ def main():
     #file_list = file_list[1320:1322]
 
     make_df(file_list, save = 1, ft_model = ft_model)
+
+    # summarize data
+    data = pd.read_pickle(os.path.join('data','full_df.pkl'))
+    outpath = os.path.join('NLPexam', 'out')
+
+    get_summaries(data, outpath)
 
 if __name__ == "__main__":
     main()

@@ -69,8 +69,8 @@ def make_df(file_list: list, save, ft_model) -> pd.DataFrame and list:
     final_df.dropna(inplace=True)
     
     if save: 
-        outfile_csv = os.path.join("..", "data", "test_df.csv")
-        outfile_pickle = os.path.join("..", "data", "test_df.pkl")
+        outfile_csv = os.path.join("..", "data", "full_df.csv")
+        outfile_pickle = os.path.join("..", "data", "full_df.pkl")
         final_df.to_csv(outfile_csv) 
         final_df.to_pickle(outfile_pickle)
 

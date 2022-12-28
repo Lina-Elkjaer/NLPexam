@@ -27,6 +27,23 @@ The organization of the project is as follows:
 └── README.md                <- Presentation of the repository
 ```
 
-
-
+## How to run the code
+To replicate our analysis first clone this repository. Then type
+```
+bash run.sh
+```
+to install the neccesary packages and create the virual environment nlp-env. Subsequently, make sure to activate the environment by typing
+```
+source ./nlp-env/bin/activate
+```
+You are now ready to download the raw data from [here](https://github.com/James-ZYM/RussiaUkraineConflictDataset) and place the Comments and Submissions folders within the raw folder.
+use main.py to perform preprocessing and generate the dataframe that can be used to perform BERTopic modeling
+```
+python3 src/main.py
+```
+Finally run the bertopic scripts to train the model and generate the html-files containing the interactive plots
+```
+python3 src/bertopic_all.py
+python3 src/bertopic_eng.py
+```
 

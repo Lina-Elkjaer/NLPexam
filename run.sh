@@ -14,9 +14,12 @@ NC='\033[0m'
 # install packages
 pip install pandas
 pip install bertopic
+pip install fasttext
+pip install matplotlib
+pip install seaborn
+pip install stop_words
 #pip install ipykernel
 #python -m ipykernel install --user --name==nlp-env
 
 # done
 echo -e "[${GREEN}INFO:${NC}] Everything installed!"
-

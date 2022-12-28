@@ -1,6 +1,5 @@
 # Importing dependencies
 import os
-import re
 import pandas as pd
 import random
 import numpy as np
@@ -57,7 +56,7 @@ for i in docs:
 sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 embeddings = sentence_model.encode(docs, show_progress_bar=True)
-path_save_emb = os.path.join("out", "embedding_eng_downsampled2")
+path_save_emb = os.path.join("out", "embedding_eng_downsampled")
 np.save(path_save_emb, embeddings)
 
 # Fitting the model
@@ -79,12 +78,12 @@ topic_model.update_topics(docs, vectorizer_model=vectorizer_model)
 
 # Save and load model
 
-path_save_model = os.path.join("out", "eng_model_downsampled2")
+path_save_model = os.path.join("out", "eng_model_downsampled")
 topic_model.save(path_save_model)
 topic_model = BERTopic.load(path_save_model)
 
-path_save_1 = os.path.join("out", "topics_over_time_eng_downsampled2.html")
-path_save_2 = os.path.join("out", "topics_over_time_class_eng_downsampled2.html")
+path_save_1 = os.path.join("out", "topics_over_time_eng_downsampled.html")
+path_save_2 = os.path.join("out", "topics_over_time_class_eng_downsampled.html")
 
 # Topics over time
 topics_over_time = topic_model.topics_over_time(docs, dates, nr_bins=20)

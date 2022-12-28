@@ -1,6 +1,5 @@
 # Importing dependencies
 import os
-import re
 import pandas as pd
 import random
 import numpy as np
@@ -52,9 +51,11 @@ for i in docs:
     test = isinstance(i, str)
     if test == False: 
         print(test)
-'''
+
 # Prepare embeddings
 sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
+
+print(len(docs))
 
 embeddings = sentence_model.encode(docs, show_progress_bar=True)
 path_save_emb = os.path.join("out", "embedding_full_downsampled")
@@ -85,10 +86,9 @@ topic_model.update_topics(docs, vectorizer_model=vectorizer_model)
 
 path_save_model = os.path.join("out", "full_model_downsampled")
 topic_model.save(path_save_model)
-'''
-path_save_model = os.path.join("out", "full_model_downsampled")
+
 topic_model = BERTopic.load(path_save_model)
-'''
+
 path_save_1 = os.path.join("out", "topics_over_time_all_downsampled.html")
 path_save_2 = os.path.join("out", "topics_per_class_all_downsampled.html")
 path_save_3 = os.path.join("out", "topics_per_subreddit_all_downsampled.html")
@@ -98,7 +98,6 @@ topics_over_time = topic_model.topics_over_time(docs, dates, nr_bins=20)
 
 fig1 = viz_topics_over_time(topic_model, topics_over_time, top_n_topics=20)
 fig1.write_html(path_save_1)
-'''
 
 path_save_2 = os.path.join("out", "topics_per_class_all_downsampled2.html")
 path_save_3 = os.path.join("out", "topics_per_subreddit_all_downsampled2.html")

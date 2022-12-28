@@ -1,5 +1,10 @@
-# RussiaUkraineConflict_Dataset
+# BERTopic modeling on the 2022 Russian-Ukranian War
 A Reddit Dataset for the Russo-Ukrainian Conflict in 2022
+
+Welcome to our reposity used for topic modeling on a reddit dataset for the Russian-Ukranian War in 2022.
+The modeling is based on the dataset described [[in this paper](https://arxiv.org/abs/2206.05107)]
+
+
 
 Paper link: https://arxiv.org/abs/2206.05107
 

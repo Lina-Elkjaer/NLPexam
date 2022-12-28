@@ -46,4 +46,11 @@ Finally run the bertopic scripts to train the model and generate the html-files 
 python3 src/bertopic_all.py
 python3 src/bertopic_eng.py
 ```
+## Investiage the interactive plots from dynamic and class-based topic modeling from BERTopic
+[Topics over time for all languages](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_over_time_all.html)
+[Topics over time for english](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_over_time_eng.html)
+[Topics per language](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_per_language_all.html)
+[Topics per subreddit](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_per_subreddit_all.html)
+
+
 

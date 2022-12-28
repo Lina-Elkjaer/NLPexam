@@ -6,7 +6,7 @@ The modeling is based on the dataset described in [this paper](https://arxiv.org
 
 ## Project Organization
 The organization of the project is as follows:
-´´´
+```
 ├── LICENSE                  <- the license of this code
 ├── README.md                <- The top-level README for this project.
 ├── .github            
@@ -22,7 +22,7 @@ The organization of the project is as follows:
 ├── .gitignore               <- A list of files not uploaded to git
 ├── requirement.txt          <- A requirements file of the required packages.
 └── assignment_description.md<- the assignment description
-´´´
+```
 
 
 

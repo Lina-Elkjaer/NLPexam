@@ -7,21 +7,24 @@ The modeling is based on the dataset described in [this paper](https://arxiv.org
 ## Project Organization
 The organization of the project is as follows:
 ```
-├── LICENSE                  <- the license of this code
-├── README.md                <- The top-level README for this project.
-├── .github            
-│   └── workflows            <- workflows to automatically run when code is pushed
-│   │    └── pytest.yml      <- A workflow which runs pytests upon push
-├── ner                      <- The main folder for scripts
-|   ├── archive              <- Folder containing early drafts of the scripts.
-|   ├── data.py              <- A script containing functions for loading and preprocessing data.
-|   ├── LSTM.py              <- A script containing classes and functions used for initializing the LSTM as well as plotting and computing the loss.
-|   └── main.py              <- A script containing the main function in which the model is trained, validated, and tested.
-├── out                      <- Folder containing .png files of the loss-curves and .txt files with the test metrics.
-├── run.sh                   <- setup script to run main.py and download required packages
+├── data                      <- The folder in which the preprocessed dataframe is saved.
+├── GPU                       <- Stores the zip-folder that was used for GPU acceleration attempts
+├── models                    <- Stores the pre-trained embedding model
+├── nbs                       <- Notebooks used for BERTopic modeling on Russian and Ukranian subsets
+|   ├── model_russian.ipynb
+|   └── model_ukraine.ipynb
+├── out                      <- Stores the outputs from BERTopic modeling
+├── raw                      <- Folder containing the raw data
+├── src 
+|   ├── bertopic_all.py      <- Script to run the multilingual model
+|   ├── bertopic_eng.py      <- Script to run the english model
+|   ├── data.py              <- Script of data pre-processing functions
+|   ├── main.py              <- Main script
+|   ├── summary.py           <- Script of data summary staticstic functions
+│   └── viz_functions.py     <- Script of the main visualization functions
+├── run.sh                   <- Setup script that downloads packages and creates the environment
 ├── .gitignore               <- A list of files not uploaded to git
-├── requirement.txt          <- A requirements file of the required packages.
-└── assignment_description.md<- the assignment description
+└── README.md                <- Presentation of the repository
 ```
 
 

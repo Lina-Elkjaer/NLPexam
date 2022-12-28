@@ -9,6 +9,10 @@ The modeling is based on the dataset described in [this paper](https://arxiv.org
 
 [Topics over time for english](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_over_time_eng.html)
 
+[Topics over time for russian](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_over_time_russian.html)
+
+[Topics over time for ukranian](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_over_time_ukrainian.html)
+
 [Topics per language](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_per_language_all.html)
 
 [Topics per subreddit](https://htmlpreview.github.io/?https://github.com/Lina-Elkjaer/NLPexam/blob/main/out/topics_per_subreddit_all.html)

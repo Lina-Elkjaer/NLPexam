@@ -20,8 +20,10 @@ The modeling is based on the dataset described in [this paper](https://arxiv.org
 ## Project Organization
 The organization of the project is as follows:
 ```
+
+├── GPU                       <- Stores the zip-folder that was used for GPU acceleration attempts.
+├── archive                   <- Previous notebooks to test functions, installations and datastructures.
 ├── data                      <- The folder in which the preprocessed dataframe is saved.
-├── GPU                       <- Stores the zip-folder that was used for GPU acceleration attempts
 ├── models                    <- Stores the pre-trained embedding model
 ├── nbs                       <- Notebooks used for BERTopic modeling on Russian and Ukranian subsets
 |   ├── model_russian.ipynb
